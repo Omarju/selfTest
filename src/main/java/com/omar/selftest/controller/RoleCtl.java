@@ -38,7 +38,7 @@ public class RoleCtl {
 		return string;
 	}
 
-	/* URL访问地址示例 */
+	/* URL访问地址示例 ,无法封装对象*/
 	@GetMapping("/getRole")
 	public @ResponseBody List<Role> getRole(Role role, HttpServletRequest request) {
 		List<Role> roles = sysCtlSev.getRoles(role);
