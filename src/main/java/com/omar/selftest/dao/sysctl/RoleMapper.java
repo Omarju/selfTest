@@ -15,9 +15,7 @@ import com.omar.selftest.domain.sysctl.Role;
 @Repository
 public interface RoleMapper {
 	
-	报错
-    
-    @Insert("insert into Role(id,roleName) values(#{id},#{roleName})")
+    @Insert("insert into Role(id,roleName) values(#{id},#{roleName}) ")
     int addRole(Role role);
     
     @Select("select * from Role where roleName like CONCAT('%',CONCAT(#{roleName},'%'))")
